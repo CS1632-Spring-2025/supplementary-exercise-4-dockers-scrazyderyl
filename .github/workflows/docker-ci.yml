@@ -44,7 +44,7 @@ jobs:
         run: chmod +x wait-for-webserver.sh
         
       - name: Wait for webserver
-        run: ./wait-for-webserver.sh
+        run: sh wait-for-webserver.sh
 
       - name: Run Selenium Tests
         run: cd selenium && mvn test
